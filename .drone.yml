@@ -9,7 +9,6 @@ pipeline:
     when:
       repo: mdharamadas1/drone-starter
       event: [ push, pull_request ]
-      branch: [ master ]
 
   # publish-api-docker:
   #   image: plugins/docker:1.12
