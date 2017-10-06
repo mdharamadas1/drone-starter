@@ -7,7 +7,9 @@ pipeline:
       - ./bin/drone-run-tests.sh api-tests
       - ./bin/drone-run-tests.sh web-tests
     when:
-      event: [pull_request]
+      repo: mdharamadas1/drone-starter
+      event: [ push, pull_request ]
+      branch: [ master ]
 
   # publish-api-docker:
   #   image: plugins/docker:1.12
