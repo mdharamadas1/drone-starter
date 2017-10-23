@@ -18,7 +18,7 @@ The repository represent a typical Node.JS project, which has three services:
 4. `./deploy` directory has [Ansible](https://www.ansible.com/) deployment scripts which publish built docker containers to the Ubuntu 16.04 and configure Nginx for the application.
 5. `.drone.yml` - deployment steps for Drone CI
 
-### Continuous integration steps test
+### Continuous integration steps
 
 1. Every commit to github Pull Request triggers a build which run tests and notify about success/failure using Slack.
 2. Every commit to the `master` branch builds all docker containers, publish them to the Dockerhub, run Ansible scripts to deploy application to pre-production or staging environment and notify about success or failures.
